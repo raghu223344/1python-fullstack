@@ -1,0 +1,113 @@
+{% extends 'base.html' %}
+{% block title %}
+home 
+{% endblock title %}
+
+{% block corousel %}
+{% load static %}
+<!-- ======= Hero Section ======= -->
+<section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
+          <h1>Better education for better future</h1>
+          <h2>Get certified. get ahed with our programs</h2>
+          <div class="d-flex justify-content-center justify-content-lg-start">
+            <a href="/courses" class=" btn-get-started">know more</a>
+          </div>
+        </div>
+        <div class="col-lg-6 order-1 order-lg-2 hero-img" data-aos="zoom-in" data-aos-delay="200">
+          <img src="{% static 'assets\img\team\RIA.png'%}" class="img-fluid animated" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+
+{% endblock corousel %}
+
+
+{% block firstsection %}
+<!-- ======= About Us Section ======= -->
+<section id="about" class="about">
+  <div class="container" data-aos="fade-up">
+
+    <div class="section-title">
+      <h2>About Us</h2>
+    </div>
+
+    <div class="row content">
+      <div class="col-lg-6">
+        <p>
+          Take a look at the most popular courses based on emerging technologies.
+           We guarantee success with the power of proven talent, which is ably assisted with our expert training and designing skills.
+        </p>
+        <ul>
+          <li><i class="ri-check-double-line"></i> RIA institute offers students an innovative way to learn JAVA in Bangalore.</li>
+          <li><i class="ri-check-double-line"></i> Training methodology used for conducting Dot Net course includes ease of understanding Dot Net concepts.</li>
+          <li><i class="ri-check-double-line"></i>Web Designing Training in Marathahalli, Bangalore by RIA institute offers students an innovative way to learn Web Designing in Bangalore.</li>
+        </ul>
+      </div>
+      <div class="col-lg-6 pt-4 pt-lg-0">
+        <p>
+          Ria Institute of Technology is a fast growing Information Technology company that has spread its wings in the areas of Software Development, Corporate Training & Staffing to cater to the needs of varied set of clients. Ria, one of the best software training institute in Marathahalli is managed by a group of professionals who have wide expertise in various areas of business.
+        </p>
+        <a href="#" class="btn-learn-more">Learn More</a>
+      </div>
+    </div>
+
+  </div>
+</section><!-- End About Us Section -->
+
+
+ <!-- ======= Clients Section ======= -->
+ <section id="clients" class="clients section-bg">
+  <div class="container">
+
+    <div class="row" data-aos="zoom-in">
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\python-fulllogo.jpg'%}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\java-fulllogo.jpg'%}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\css-fulllogo.png'%}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\javascript-fulllogo.jpg'%}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\html-fulllogo.png'%}" class="img-fluid" alt="">
+      </div>
+
+      <div class="col-lg-2 col-md-4 col-6 d-flex align-items-center justify-content-center">
+        <img src="{% static 'assets\img\clients\bootstrap-fulllogo.png'%}" class="img-fluid" alt="">
+      </div>
+
+    </div>
+
+  </div>
+</section><!-- End Cliens Section -->
+
+
+
+
+
+{% endblock firstsection %}
+
+
+
+
+{% block body %} 
+
+ 
+ 
+{% endblock body %}

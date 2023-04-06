@@ -1,0 +1,88 @@
+{% extends 'base.html' %}
+{% block title %}
+signin
+{% endblock title %}
+
+
+
+
+
+{% block firstsection %}
+<br>
+<br>
+<br>
+
+<div class="container" data-aos="fade-up">
+
+
+<div class="row ">
+  
+
+  <div class="col-md-4"></div>
+  <div class="col-md-4">
+
+
+    <div class="card p-3 mt-6">
+      {% comment %} <div class="col-md-4 p-2" style="margin-left: 460px ;margin-top: 10px;">
+
+      </div> {% endcomment %}
+      <div class="card-body">
+
+        {% include 'messages.html'%}
+
+
+        <h3 class="text-dark text-center">signin</h3>
+        <hr>
+        <form action="/signin" method="post">{% csrf_token %}
+          <br />
+          <label for="name">Name</label>
+          <div class="form-group">
+            <input 
+            type="text" 
+            class="form-control p-2" 
+            id="name" 
+            name="name" 
+            placeholder="Enter name"
+            required
+             />
+          </div>
+          <label for="email">Email</label>
+          <div class="form-group">
+            <input type="email" class="form-control p-2" id="email" name="email" required />
+          </div>
+          <label for="pass1">Password </label>
+          <div class="form-group">
+
+            <input type="password" class="form-control p-2 " id="pass1" name="pass1"
+              placeholder="Password must be atleast 8 characters" required />
+          </div>
+          <label for="pass">Confirm Password</label>
+          <div class="form-group">
+            <input type="password" class="form-control p-2 mb-3" id="pass2" name="pass2" placeholder="confirm password" required />
+          </div>
+          <br />
+          <div class="d-grid gap-2">
+            <button class="btn btn-dark get-started-btn" type="submit">signin</button>
+          </div>
+          <br />
+          already user? <a href="/login">login</a>
+          <br />
+        </form>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="col-md-4"></div>
+
+</div>
+
+
+
+
+
+
+
+
+
+{% endblock firstsection %}

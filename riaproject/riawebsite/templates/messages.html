@@ -1,0 +1,7 @@
+{% for message  in messages %}
+    <div class="alert alert-{{message.tages}} alert-dismissable fade show"role="alert">
+        <strong>{{message}}</strong>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" area-label="CLOSE"></button>
+    </div>
+
+{% endfor %}

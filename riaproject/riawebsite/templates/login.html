@@ -1,0 +1,76 @@
+{% extends 'base.html' %}
+{% block title %}
+login 
+{% endblock title %}
+
+
+
+
+{% block firstsection %}
+<br>
+<br>
+<br>
+<div class="container" data-aos="fade-up">
+
+<div class="row ">
+
+<div class="col-md-4"></div>
+<div class="col-md-4" >
+  
+
+<div class="card p-3" >
+  <div class="col-md-4" style="margin-left: 460px;"></div>
+    <div class="card-body">
+
+        <h3 class="text-dark text-center">login</h3>
+        <hr>
+        <form action="" method="post">{% csrf_token %}
+            <br />
+            <label for="email">Email</label>
+            <div class="form-group">
+                <input type="email"
+                class="form-control p-2"
+                id="email"
+                name="email"
+                required
+                />
+            </div>
+            
+            <label for="pass1">Password </label>
+            <div class="form-group">
+              
+              <input
+                type="password"
+                class="form-control p-2 "
+                id="pass1"
+                name="pass1"
+                placeholder="Password must be atleast 8 characters"
+                required
+                
+              />
+            </div>
+            <div class="d-grid gap-2">
+              <button class="btn btn-dark" type="button">signin</button>
+            </div>
+            <br />
+            new user? <a href="/signin">signup</a>
+            <br />
+            forget password <a href="/reset-password">click </a>
+        </form>
+  </div>
+    </div>
+    </div>
+</div>
+</div>
+</div>
+<div class="col-md-4"></div>
+
+
+
+
+
+
+
+
+
+{% endblock firstsection %}
