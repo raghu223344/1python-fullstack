@@ -1,7 +1,6 @@
 {% for message  in messages %}
-    <div class="alert alert-{{message.tages}} alert-dismissable fade show"role="alert">
+    <div class="alert alert-{{message.tags}} alert-dismissable fade show" role="alert">
         <strong>{{message}}</strong>
-        <button type="button" class="btn-close" data-bs-dismiss="alert" area-label="CLOSE"></button>
+        <button type="button" class="btn-close" data-bs-dismiss="alert" area-label="close"></button>
     </div>
-
 {% endfor %}

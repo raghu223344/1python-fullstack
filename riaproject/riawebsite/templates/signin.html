@@ -10,8 +10,6 @@ signin
 {% block firstsection %}
 <br>
 <br>
-<br>
-
 <div class="container" data-aos="fade-up">
 
 
@@ -24,16 +22,13 @@ signin
 
     <div class="card p-3 mt-6">
       {% comment %} <div class="col-md-4 p-2" style="margin-left: 460px ;margin-top: 10px;">
-
+        
       </div> {% endcomment %}
       <div class="card-body">
-
         {% include 'messages.html'%}
-
-
         <h3 class="text-dark text-center">signin</h3>
-        <hr>
-        <form action="/signin" method="post">{% csrf_token %}
+      <hr>
+        <form action="/signin" method="POST">{% csrf_token %}
           <br />
           <label for="name">Name</label>
           <div class="form-group">
@@ -48,7 +43,7 @@ signin
           </div>
           <label for="email">Email</label>
           <div class="form-group">
-            <input type="email" class="form-control p-2" id="email" name="email" required />
+            <input type="email" class="form-control p-2" id="email" name="email" placeholder= "enter the email" required />
           </div>
           <label for="pass1">Password </label>
           <div class="form-group">
